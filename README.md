@@ -1,15 +1,12 @@
 # VocabHub
 
-VocabHub is a Flask-based web application that combines natural language processing (NLP), translation, and text-to-speech (TTS) functionalities. The app allows users to input text, process it for key insights, translate it into different languages, and convert it to speech.
-
-
-You can also find the most appeared words within a paragraph before proceeding to read to ensure you understand the core words!
+VocabHub is a Flask-based web application that combines natural language processing (NLP), translation, and text-to-speech (TTS) functionalities. The app allows users to input text, process it for key insights, translate it into different languages, and convert it to speech. You can also find the most appeared words within a paragraph to ensure you understand the core words!
 
 
 ## Features
 - Text Analysis: Extracts keywords and phrases from the input text using NLP (via spaCy).
 - Translation: Translates text into multiple languages using Google Translate API.
-- Definition: finds the definition of a word using Free Dictionary API.
+- Definition: Finds the definition of a word using the Free Dictionary API.
 - Text-to-Speech (TTS): Converts text to speech using Google Text-to-Speech (gTTS).
 - File Handling: Ability to download the translated text or the generated speech file.
 
@@ -40,8 +37,10 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 ```
 
 ### 3. Install Required Packages
+Ensure pip is updated, then install the required packages:
 
 ```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
@@ -103,15 +102,14 @@ googletrans==4.0.0rc1
 spacy==3.7.5
 gTTS==2.5.1
 ```
+To install these packages, run:
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Contributing
 
-Feel free to contribute by opening issues, suggesting features, or submitting pull requests. 
-
-As this is my first deployed application, the code is not the best at the moment, but I am willing to improve constantly!
+Feel free to contribute by opening issues, suggesting features, or submitting pull requests. As this is my first deployed application, the code is not the best at the moment, but I am constantly working to improve it!
 
 ## License
 This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License - see the LICENSE file for details.
