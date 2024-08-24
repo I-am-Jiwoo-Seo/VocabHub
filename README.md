@@ -6,6 +6,23 @@ VocabHub is a Flask-based web application that combines natural language process
 You can also find the most appeared words within a paragraph before proceeding to read to ensure you understand the core words!
 
 
+## Features
+- Text Analysis: Extracts keywords and phrases from the input text using NLP (via spaCy).
+- Translation: Translates text into multiple languages using Google Translate API.
+- Definition: finds the definition of a word using Free Dictionary API.
+- Text-to-Speech (TTS): Converts text to speech using Google Text-to-Speech (gTTS).
+- File Handling: Ability to download the translated text or the generated speech file.
+
+## Technologies Used
+- Python: Core language for backend processing.
+- Flask: Web framework used to create the web application.
+- spaCy: NLP library used for text analysis.
+- Pandas: Used for data manipulation.
+- Googletrans: Python wrapper for Google Translate.
+- gTTS: Google Text-to-Speech API.
+- HTML/CSS + Bootstrap: Frontend technologies for rendering templates.
+
+
 ## Installation
 
 ### 1. Clone the Repository
@@ -75,15 +92,29 @@ flask run
 
 ```
 
+## Dependencies
+The required packages are listed in requirements.txt. Here are the main dependencies:
+
+
+```plaintext
+Flask==2.3.2
+pandas==2.2.1
+googletrans==4.0.0rc1
+spacy==3.7.5
+gTTS==2.5.1
+```
+```bash
+pip install -r requirements.txt
+```
+
 ## Contributing
 
-Pull requests are welcome. As this is my first deployed application, the code is not the best at the moment, but I am willing to improve constantly!
+Feel free to contribute by opening issues, suggesting features, or submitting pull requests. 
 
-For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+As this is my first deployed application, the code is not the best at the moment, but I am willing to improve constantly!
 
 ## License
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License - see the LICENSE file for details.
 
-[MIT](https://choosealicense.com/licenses/mit/)
+## Acknowledgments
+- Creative Tim for open-source frontend dashboard templates. 
