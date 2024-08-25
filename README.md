@@ -1,6 +1,9 @@
 # VocabHub
+![Alt text](readme1.png)
+
 
 VocabHub is a Flask-based web application that combines natural language processing (NLP), translation, and text-to-speech (TTS) functionalities. The app allows users to input text, process it for key insights, translate it into different languages, and convert it to speech. You can also find the most appeared words within a paragraph to ensure you understand the core words!
+
 
 
 ## Features
